@@ -1,0 +1,14 @@
+<div class="testimonial-card" [ngStyle]="{'margin-top.px': marginTop}">
+   <div class="header">
+        <div class="photo">
+            <img src="assets/images/{{testimonialData.image}}" alt="Colton Smith">
+        </div>
+        <div class="title">
+            <h3>{{testimonialData.name}}</h3>
+            <span>{{testimonialData.profile}}</span>
+        </div>
+   </div> 
+   <div class="body">
+       <p>{{testimonialData.testimonial}}</p>
+   </div>
+</div>

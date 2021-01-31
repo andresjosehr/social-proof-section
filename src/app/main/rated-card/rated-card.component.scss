@@ -1,0 +1,46 @@
+@import "/src/variables.scss";
+
+.rated-card{
+    background-color: $lightGrayishMagenta;
+    display: flex;
+    padding: 0 12.5px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    max-width: 415px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+
+    .stars{
+        padding: 0px 18px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    .description{
+        padding: 0 3px;
+        span{
+            font-weight: 700;
+            font-size: 13px;
+            color: $veryDarkColor;
+        }
+    }
+}
+
+
+@media (max-width: 1150px){
+    .rated-card{
+        margin-right: 0px !important;;
+    }
+}
+
+@media (max-width: 1000px){
+    .rated-card{
+        display: block;
+        max-width: auto;
+        text-align: center;
+    }
+    .description{
+        margin-top: 5px;
+    }
+}

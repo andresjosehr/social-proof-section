@@ -1,0 +1,46 @@
+@import "/src/variables.scss";
+
+.testimonial-card{
+    background-color: $veryDarkColor;
+    max-width: 290px;
+    padding: 38px 30px;
+    border-radius: 8px;
+    .header{
+        display: flex;
+        .photo{
+            img{
+                height: 42px;
+                border-radius: 50%;
+            }
+        }
+        .title{
+            margin-left: 22px;
+            h3{
+                margin: 0px;
+                color: $lightGrayishMagenta;
+            }
+            span{
+                color: $softPinkColor;
+                font-size: 13px;
+                margin-top: 4px;
+                display: block;
+            }
+        }
+    }
+
+    .body{
+        p{
+            color: $lightGrayishMagenta;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .testimonial-card{
+        margin-top: 0px !important;
+    }
+}
